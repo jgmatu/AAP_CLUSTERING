@@ -15,7 +15,7 @@ double time_comm;
  * La lógica de los procesos reduce es muy sencilla cuentan el número de ocurrencias
  * que obtienen del proceso map asociadas a su id del primer dígito hasta que reciben
  * una ocurrencia negativa como señal de cierre del proceso master. Terminan la tarea
- * y mandan un mensaje al proceso map con el número de total de ocurrencias de primer
+ * y mandan un mensaje al proceso master con el número de total de ocurrencias de primer
  * dígito asociado a su id.
  */
 void
