@@ -10,9 +10,8 @@ home=/home/ubuntu
 
 apt update && apt -y install awscli
 
-export AWS_ACCESS_KEY_ID=AKIAJ27ZWF3SMX7RLV3A
-export AWS_SECRET_ACCESS_KEY=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
-
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
 aws s3 sync s3://datamipsfiles $home
 
 mv $home/AAP.pem $home/.ssh/id_rsa
