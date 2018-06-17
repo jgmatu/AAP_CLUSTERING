@@ -263,7 +263,7 @@ get_size_file(char* file)
 
 	if (stat(file , &sb) < 0) {
 		fprintf(stderr, "Error stat file... %s error... %s\n" , file , strerror(errno));
-            exit(1);
+		exit(1);
 	}
       return sb.st_size;
 }
